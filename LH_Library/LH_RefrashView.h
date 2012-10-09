@@ -14,10 +14,19 @@ typedef enum{
 	PullDownToRefreshLoading,	
 } PullDownToRefreshState;
 
+enum SharpStyle2
+{
+    LH_SharpStyleGray2 = 1,
+    LH_SharpStyleBlue2,
+    LH_SharpStyleWhite2,
+    LH_SharpStyleBlack2
+};
+
 @protocol PullDownToRefreshTableHeaderDelegate;
 @interface LH_RefrashView : UIView
 {
 	id                      _delegate;
+    enum SharpStyle2        sharpStyle2;
 	PullDownToRefreshState  _state;
 	
 	UILabel                 *_lastUpdatedLabel;
@@ -25,8 +34,10 @@ typedef enum{
 	CALayer                 *_arrowImage;
 	UIActivityIndicatorView *_activityView;
 }
+@property (assign, nonatomic) enum SharpStyle2 sharpStyle2;
+@property (nonatomic, assign) id <PullDownToRefreshTableHeaderDelegate> delegate;
 
-@property(nonatomic,assign) id <PullDownToRefreshTableHeaderDelegate> delegate;
+- (NSString *)getBundleFile:(NSString *)filename;
 
 - (void)refreshLastUpdatedDate;
 - (void)pullDownToRefreshScrollViewDidScroll:(UIScrollView *)scrollView;
