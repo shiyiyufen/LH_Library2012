@@ -37,7 +37,6 @@ enum SharpStyle2
 @property (assign, nonatomic) enum SharpStyle2 sharpStyle2;
 @property (nonatomic, assign) id <PullDownToRefreshTableHeaderDelegate> delegate;
 
-- (NSString *)getBundleFile:(NSString *)filename;
 
 - (void)refreshLastUpdatedDate;
 - (void)pullDownToRefreshScrollViewDidScroll:(UIScrollView *)scrollView;

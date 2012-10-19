@@ -36,6 +36,10 @@
 - (void)setLeftItem:(BOOL)b;
 //显示右边主页
 - (void)setRightItem:(BOOL)b;
+//显示左边按钮－》宽度
+- (void)setLeftItemWidth:(NSInteger)width;
+//显示右边－》宽度
+- (void)setRightItemWidth:(NSInteger)width;
 - (void)goBackToLastPage;
 - (void)goBackToMainPage;
 //自定义提示窗

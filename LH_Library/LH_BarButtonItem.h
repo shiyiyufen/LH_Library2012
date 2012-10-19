@@ -14,4 +14,7 @@
 
 //初始化UIBarButtonItem
 - (id)initWithTarget:(id)target action:(SEL)action image:(NSString *)aimage title:(NSString *)atitle;
+
+//可定义宽度
+- (id)initWithTarget:(id)target action:(SEL)action image:(NSString *)aimage title:(NSString *)atitle width:(CGFloat)width;
 @end

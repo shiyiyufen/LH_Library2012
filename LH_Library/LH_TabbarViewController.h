@@ -7,9 +7,9 @@
 //
 #import <UIKit/UIKit.h>
 static const NSString *LHTABBARITEMKEY_VIEWCONTROLLER = @"viewcontroller";
-static const NSString *LHTABBARITEMKEY_IMAGENAME = @"image";
-static const NSString *LHTABBARITEMKEY_TITLE = @"title";
-static const NSString *LHTABBARITEMKEY_TAG = @"tag";
+static const NSString *LHTABBARITEMKEY_IMAGENAME      = @"image";
+static const NSString *LHTABBARITEMKEY_TITLE          = @"title";
+static const NSString *LHTABBARITEMKEY_TAG            = @"tag";
 
 
 @interface LH_TabbarViewController : UITabBarController
