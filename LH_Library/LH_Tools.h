@@ -11,7 +11,8 @@ enum DateType
 {
     DateTypeYMD = 2121,
     DateTypeOriginal,
-    DateTypeHMS
+    DateTypeHMS,
+    DateTypeSpecial//万商云集格式(00000000000000)
 };
 
 //文件是否存在于路径
@@ -41,6 +42,7 @@ BOOL fileIsExsitAtPath(NSString *path);
 
 //加密->类
 + (NSString *)returnEncodeStringWithString:(NSString *)inputString;
+
 
 //获取当前时间字符串－》类
 + (NSString *)returnNowDateWithFormat:(enum DateType)dateType;

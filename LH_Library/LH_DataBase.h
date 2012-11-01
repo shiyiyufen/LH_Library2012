@@ -9,11 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <PlausibleDatabase/PlausibleDatabase.h>
 @interface LH_DataBase : NSObject
-- (PLSqliteDatabase *)opena;
+
 //打开数据库
-+ (PLSqliteDatabase *)openDB;
-//添加更新操作数据
-+ (BOOL)operateDbUpdate:(NSString *)updateString;
-//查询数据
-+ (id)operateDbSelecte:(NSString *)string;
++ (PLSqliteDatabase *)openDB:(NSString *)db;
+
+//关闭数据库
++ (void)closeDB;
+
 @end
